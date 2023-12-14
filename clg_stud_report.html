@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arunai Engineering College</title>
+    <style>
+        body {
+            background-color: rgb(51, 7, 75); /* Default background color */
+            color: #fff; /* Default text color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-nav header {
+            background-color: #0D3B66; /* Match the body background color */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header-nav header h1 {
+            margin: 0;
+        }
+
+        .header-nav nav {
+            background-color: #0D3B66; /* Match the body background color */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-nav nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .header-nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .header-nav  a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        .header-nav  a:hover {
+            color: #FFA500;
+        }
+
+        .header-nav #colorPicker {
+            position: absolute;
+            top: 20px; /* Adjust the top position as needed */
+            left: 20px; /* Adjust the left position as needed */
+        }
+
+        .header-nav {
+            background-color: #0D3B66;
+            padding: 10px;
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+            nav li {
+                margin: 10px 0;
+            }
+        }
+        
+        /* next code */
+        .resume {
+            width: 210mm;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header_std {
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .resume h1 {
+            font-size: 28px;
+            margin: 0;
+            color: white;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            color: #555;
+        }
+
+        /* Custom Colors */
+        .resume header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px 0;
+        }
+
+        .summary {
+            background-color: #3498db;
+            color: black;
+        }
+
+        .box {
+            background-color: #ecf0f1;
+            color: black;
+        }
+        .contact{
+            display: flex;
+            justify-content:space-between;
+        }
+        
+
+        /* Add more custom colors as needed */
+
+    </style>
+</head>
+<body>
+    <div class="header-nav">
+        <header>
+            <h1>Arunai Engineering College</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="clg_dash.html">Home Page</a></li>
+                <li><a href="#">Attendance Entry</a></li>
+                <li><a href="clg_attendance_report.html">Attendance Report</a></li>
+                <li><a href="clg_stud_report.html">Student Report</a></li>
+                <li><a href="clg_students_input.html">Student Entry</a></li>
+                <li><a href="#">Overall Report</a></li>
+                <li><a href="login.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+<!-- next code -->
+<div class="resume">
+    <header class="header_std">
+        <!-- Add an image here -->
+        <h1>D.pugazheswar</h1>
+        <p>AI&DS</p>
+    </header>
+    <section class="box contact">
+        <div class="cnt">
+            <h2>Contact Information</h2>
+        <p>Email: padmanathanrohit@gmail.com</p>
+        <p>Phone: 9790783750</p>
+        <p>Address:12/24 ramalinganar street,
+                      tiruvannamalai. </p>
+        </div>
+        <img src="pexels-this-is-zun-1329494.jpg" alt="Your Image" style="max-width: 100px;">
+    </section>
+    <section class="box summary">
+        <h2>Summary</h2>
+        <p>A brief summary of your professional background and career goals.</p>
+    </section>
+    <section class="box education">
+        <h2>Education</h2>
+        <p>Degree: Bachelor of Science in Computer Science</p>
+        <p>School: University Name</p>
+        <p>Year: 20XX</p>
+    </section>
+    <section class="box experience">
+        <h2>Work Experience</h2>
+        <p>Job Title: Software Engineer</p>
+        <p>Company: XYZ Inc.</p>
+        <p>Duration: 20XX - Present</p>
+        <p>Responsibilities: Describe your job responsibilities.</p>
+    </section>
+    <!-- Add more box sections for additional details -->
+</div>
+</body>
+</html>

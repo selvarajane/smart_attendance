@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student College Report</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .report-box {
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            max-width: 800px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #3DBF77;
+            position: relative; /* Added to position the arrow button */
+        }
+
+        .student-photo {
+            width: 30%;
+            background-color: #fff;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .student-photo img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 100px;
+        }
+
+        .student-details {
+            padding: 20px;
+            width: 70%;
+        }
+
+        .student-details h1 {
+            background-color: #3DBF77; /* Green */
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3DBF77; /* Green */
+            color: #fff;
+        }
+
+        .arrow-button {
+            background-color: #3DBF77;
+            color: #fff;
+            border: none;
+            border-radius: 0 0 8px 8px;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            position: absolute;
+            bottom: -33px; /* Position the arrow button 20px below the report box */
+            left: 50%; /* Center the button horizontally */
+            transform: translateX(-50%); /* Center the button horizontally */
+        }
+
+        .arrow-button:hover {
+            background-color: #32a570; /* Darker Green on Hover */
+        }
+
+        .additional-info {
+            display: none;
+            padding: 20px;
+            width: 90%;
+            border-top: 1px solid #3DBF77;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-box">
+        <div class="student-photo">
+            <img src="pexels-this-is-zun-1329494.jpg" alt="Student Photo">
+        </div>
+        <div class="student-details">
+            <h1>Student College Report</h1>
+            <table>
+                <tr>
+                    <th>Student Name</th>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <th>Student ID</th>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <th>Program</th>
+                    <td>Computer Science</td>
+                </tr>
+                <!-- Add more rows for additional details -->
+            </table>
+        </div>
+        <button class="arrow-button" onclick="toggleDetails()">▼</button>
+        <div class="additional-info" id="additionalInfo">
+            <table>
+                <tr>
+                    <th>Age</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td>123-456-7890</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>123 Main St, City</td>
+                </tr>
+                <tr>
+                    <th>EMIS No</th>
+                    <td>EMIS12345</td>
+                </tr>
+                <tr>
+                    <th>Payments</th>
+                    <td>$5000</td>
+                </tr>
+                <tr>
+                    <th>Present</th>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <th>Absentees</th>
+                    <td>10%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            const additionalInfo = document.getElementById('additionalInfo');
+            if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
+                additionalInfo.style.display = 'block';
+            } else {
+                additionalInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

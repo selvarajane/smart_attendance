@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arunai Engineering College</title>
+    <style>
+        body {
+            background-color: rgb(51, 7, 75); /* Default background color */
+            color: #fff; /* Default text color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0D3B66; /* Match the body background color */
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #0D3B66; /* Match the body background color */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        nav a:hover {
+            color: #FFA500;
+        }
+
+        #colorPicker {
+            position: absolute;
+            top: 20px; /* Adjust the top position as needed */
+            left: 20px; /* Adjust the left position as needed */
+        }
+
+        .header-nav {
+            background-color: #0D3B66;
+            padding: 10px;
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+            nav li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-nav">
+        <header>
+            <h1>Arunai Engineering College</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="clg_dash.html">Home Page</a></li>
+                <li><a href="#">Attendance Entry</a></li>
+                <li><a href="clg_attendance_report.html">Attendance Report</a></li>
+                <li><a href="clg_stud_report.html">Student Report</a></li>
+                <li><a href="clg_students_input.html">Student Entry</a></li>
+                <li><a href="#">Overall Report</a></li>
+                <li><a href="login.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="colorPicker">
+        <label for="bgColor">Background Color:</label>
+        <input type="color" id="bgColor" value="#0D3B66">
+        <label for "textColor">Text Color:</label>
+        <input type="color" id="textColor" value="#fff">
+    </div>
+
+    <script>
+        const bgColorInput = document.getElementById("bgColor");
+        const textColorInput = document.getElementById("textColor");
+
+        bgColorInput.addEventListener("input", function() {
+            document.body.style.backgroundColor = bgColorInput.value;
+        });
+
+        textColorInput.addEventListener("input", function() {
+            document.body.style.color = textColorInput.value;
+        });
+    </script>
+</body>
+</html>

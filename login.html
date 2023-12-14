@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 200px; /* Adjust the size of the college symbol */
+            display: block;
+            margin: 0 auto;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        label, input, select {
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        label {
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 12px;
+            border-radius: 5px;
+            width: 90%;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <img src="download.png" alt="College Symbol">
+    <h2>Arunai Engineering College</h2>
+    <form action="process_login.php" method="post">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="role">User Role:</label>
+        <select id="role" name "role" required>
+            <option value="Admin">Admin</option>
+            <option value="Faculty">Faculty</option>
+            <option value="HOD">HOD</option>
+        </select>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arunai Engineering College</title>
+    <style>
+        body {
+            background-color: rgb(51, 7, 75); /* Default background color */
+            color: #fff; /* Default text color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0D3B66; /* Match the body background color */
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #0D3B66; /* Match the body background color */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s;
+            user-select: none;
+        }
+
+        nav a:hover {
+            color: #FFA500;
+        }
+
+        #colorPicker {
+            position: absolute;
+            top: 20px; /* Adjust the top position as needed */
+            left: 20px; /* Adjust the left position as needed */
+        }
+
+        .header-nav {
+            background-color: #0D3B66;
+            padding: 10px;
+        }
+
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+            nav li {
+                margin: 10px 0;
+            }
+        }
+
+   /* next codes */
+
+
+   .att_report body {
+    color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0px 50px;
+            background-color: #f0f0f0;
+        }
+
+        .att_report .container {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            color: black;
+            margin: 50px auto;
+        }
+
+        .att_report .box {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            animation: fadeIn 1s ease-in-out;
+            color: black;
+        }
+
+        .att_report .student-table {
+            width: 100%;
+            border-collapse: collapse;
+            color: black;
+        }
+
+        .att_report .student-table th, .student-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            color: black;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="header-nav">
+        <header>
+            <h1>Arunai Engineering College</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="clg_dash.html">Home Page</a></li>
+                <li><a href="#">Attendance Entry</a></li>
+                <li><a href="clg_attendance_report.html">Attendance Report</a></li>
+                <li><a href="clg_stud_report.html">Student Report</a></li>
+                <li><a href="clg_students_input.html">Student Entry</a></li>
+                <li><a href="#">Overall Report</a></li>
+                <li><a href="login.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="att_report">
+        <div class="container">
+            <div class="box" id="absentBox">
+                <h2>Absent Students</h2>
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Reg. No</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>12345</td>
+                            <td>2023-10-27</td>
+                        </tr>
+                        <!-- Add more rows for other students -->
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="box" id="ondutyBox">
+                <h2>On-Duty Students</h2>
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Reg. No</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>67890</td>
+                            <td>2023-10-27</td>
+                        </tr>
+                        <!-- Add more rows for other students -->
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="box" id="summaryBox">
+                <h2>Attendance Summary</h2>
+                <table class="student-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Total Present</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Total Absent</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Total On-Duty</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
